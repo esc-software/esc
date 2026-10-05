@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Avoids a white flash before the stylesheet loads -->
+    <style>
+      html,
+      body {
+        background: #050505;
+      }
+    </style>
+    <noscript
+      ><style>
+        #intro {
+          display: none;
+        }
+      </style></noscript
+    >
+
+    <!-- Language-specific tags (title, description, canonical, Open Graph, JSON-LD) are injected at build time by scripts/prerender.mjs -->
+    <!--seo-head-->
+
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site summary" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Text fonts are self-hosted (src/fonts.css) and preloaded by scripts/prerender.mjs.
+         Only the icon font still comes from Google, non-blocking and limited to the icons used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=alternate_email,gesture,phone,schedule&display=block"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=alternate_email,gesture,phone,schedule&display=block"
+      />
+    </noscript>
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ESC" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9MBCQSFVNE");
+
+      // Events are queued right away; the 180 KB gtag.js itself loads once the page is idle
+      // (or on first interaction), so it does not compete with rendering.
+      (function () {
+        var loaded = false;
+        function load() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-9MBCQSFVNE";
+          document.head.appendChild(s);
+        }
+        ["pointerdown", "keydown", "scroll", "touchstart"].forEach(function (e) {
+          window.addEventListener(e, load, { once: true, passive: true });
+        });
+        window.addEventListener("load", function () {
+          if ("requestIdleCallback" in window) requestIdleCallback(load, { timeout: 3000 });
+          else setTimeout(load, 2000);
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

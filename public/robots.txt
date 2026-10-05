@@ -1,0 +1,34 @@
+# ESC Software - https://esc-software.com
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# AI / LLM crawlers: public content may be indexed and cited
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://esc-software.com/sitemap.xml

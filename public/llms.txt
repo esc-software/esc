@@ -1,0 +1,27 @@
+# ESC Software
+
+> A ESC é uma software house com sede em São Paulo e clientes no mundo todo. Fazemos sites, sistemas sob medida, lojas virtuais, plataformas SaaS, sistemas de IA e projetos embarcados e IoT. / ESC is a software house based in São Paulo, Brazil, with clients worldwide. It builds websites, custom systems, online stores, SaaS platforms, AI systems and embedded/IoT projects. The website is in English.
+
+- Fundada em 2020 por Flavio Luiz (flazo0) / Founded in 2020 by Flavio Luiz (flazo0)
+- 478+ projetos entregues, 250+ aplicações web, suporte 24/7 com SLA em contrato / 478+ projects delivered, 250+ web applications, 24/7 support under a contractual SLA
+- Stack: React, Next.js, TypeScript, Node.js, Python, Go, PostgreSQL, Redis, Docker, Kubernetes, AWS e GCP
+- Idiomas de atendimento: português, inglês e espanhol / Languages: Portuguese, English, Spanish
+- NDA em todos os projetos / NDA on every project
+- Endereço: R. Padre Jacinto de Carvalhais, 44 - Jardim Santo Andre, São Paulo - SP, 08390-350
+- Horário (Brasília): segunda a quinta 10h às 18h, sexta 10h às 13h / Hours (Brasília time): Mon to Thu 10:00 to 18:00, Fri 10:00 to 13:00
+- Contato: hello@esc-software.com, +55 11 99303-1311
+
+## Páginas / Pages
+
+- [Home](https://esc-software.com/): landing page com todos os serviços, clientes, processo, FAQ e contato (em inglês)
+- [Services](https://esc-software.com/#services): sites, e-commerce, sistemas sob medida, embarcados e IoT, IA
+- [Clients](https://esc-software.com/#clients): LAET, DOPE, ETO e UNG
+- [Process](https://esc-software.com/#process): descoberta, planejamento, engenharia e blindagem
+- [FAQ](https://esc-software.com/#faq): prazos, NDA, suporte, endereço
+- [Contact](https://esc-software.com/#contact): formulário, e-mail e telefone
+
+## Mais
+
+- [Descrição completa / Full description](https://esc-software.com/llms-full.txt)
+- [Sitemap](https://esc-software.com/sitemap.xml)
+- [ESC no LinkedIn](https://www.linkedin.com/company/esc-s/), [ESC no Instagram](https://www.instagram.com/esc_software), [Flavio no LinkedIn](https://www.linkedin.com/in/flazo0)

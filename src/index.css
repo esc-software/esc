@@ -1,0 +1,187 @@
+/*
+ * Global styles: Tailwind layers, the design tokens (HSL CSS variables, dark theme only) and the
+ * few shared component classes (metallic and outlined headline text, labels, noise overlay,
+ * marquee). Everything else is Tailwind utilities in the components.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 85%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 85%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 85%;
+    --primary: 0 0% 78%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 78%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 38%;
+    --accent: 220 6% 14%;
+    --accent-foreground: 0 0% 85%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 0 0% 25%;
+    --radius: 0.25rem;
+    --silver: 0 0% 62%;
+    --silver-bright: 0 0% 88%;
+    --metallic: 220 5% 48%;
+    --surface-glass: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    cursor: none !important;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 100;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-wrap: balance;
+    font-optical-sizing: auto;
+  }
+
+  p {
+    text-wrap: pretty;
+    line-height: 1.75;
+  }
+
+  ::selection {
+    background: hsla(0, 0%, 100%, 0.12);
+    color: hsl(0 0% 98%);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: hsla(var(--surface-glass), 0.02);
+    backdrop-filter: blur(24px);
+    border: 1px solid hsla(var(--surface-glass), 0.04);
+  }
+
+  .metallic-text {
+    --angle: 135deg;
+    background: linear-gradient(
+      var(--angle),
+      hsl(0 0% 40%) 0%,
+      hsl(0 0% 72%) 20%,
+      hsl(0 0% 98%) 45%,
+      hsl(0 0% 98%) 55%,
+      hsl(0 0% 72%) 80%,
+      hsl(0 0% 40%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .metallic-text-reverse {
+    --angle: -135deg;
+  }
+
+  .text-silver {
+    color: hsl(var(--silver));
+  }
+
+  .text-silver-bright {
+    color: hsl(var(--silver-bright));
+  }
+
+  .font-mono-accent {
+    font-family: "Google Sans Code", monospace;
+    font-variation-settings: "MONO" 1;
+  }
+
+  .label-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: hsl(var(--primary));
+  }
+
+  .stroke-text {
+    background: none;
+    font-family:
+      system-ui,
+      -apple-system,
+      "Montserrat",
+      sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke: 1px hsla(0, 0%, 100%, 0.329);
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title-chat {
+    font-family: "Google Sans Code", sans-serif;
+    font-variation-settings: "MONO" 1;
+    font-weight: 300;
+    font-size: 1rem;
+    color: hsl(var(--foreground));
+  }
+
+  .text-chat {
+    font-family: "Google Sans Code", monospace;
+    font-variation-settings: "MONO" 1;
+  }
+
+  .noise-overlay::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 128px;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 60s linear infinite;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 25%, 0.3);
+  border-radius: 2px;
+}

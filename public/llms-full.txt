@@ -1,0 +1,67 @@
+# ESC Software: descrição completa / full description
+
+> A ESC é uma software house com sede em São Paulo e clientes no mundo todo. Fazemos sites, sistemas sob medida, lojas virtuais, plataformas SaaS, sistemas de IA e projetos embarcados e IoT. / ESC is a software house based in São Paulo, Brazil, with clients worldwide. It builds websites, custom systems, online stores, SaaS platforms, AI systems and embedded/IoT projects.
+
+Site / Website: https://esc-software.com/ (conteúdo em inglês / English content)
+Fundação / Founded: 2020, por Flavio Luiz (conhecido como flazo0)
+E-mail: hello@esc-software.com
+Telefone / Phone: +55 11 99303-1311
+Endereço / Address: R. Padre Jacinto de Carvalhais, 44 - Jardim Santo Andre, São Paulo - SP, 08390-350, Brasil
+Horário / Hours (Brasília): segunda a quinta 10h às 18h, sexta 10h às 13h / Mon to Thu 10:00 to 18:00, Fri 10:00 to 13:00
+Idiomas / Languages: português, inglês, espanhol
+Redes / Social: https://www.instagram.com/esc_software, https://www.linkedin.com/company/esc-s/
+Fundador / Founder: https://www.linkedin.com/in/flazo0, https://www.instagram.com/flazo0, https://github.com/flazo0, https://www.tiktok.com/@flazoo0
+
+## Serviços / Services
+
+### Sites e plataformas web / Websites and web platforms
+Sites institucionais, landing pages e plataformas web em React, Next.js e TypeScript, com SEO e foco em Core Web Vitals. 250+ aplicações entregues.
+Corporate websites, landing pages and web platforms built for speed and conversion, with SEO, accessibility and Core Web Vitals in mind.
+
+### E-commerce e lojas virtuais / E-commerce and online stores
+Lojas virtuais próprias ou em plataformas como Shopify, Nuvemshop e Wix, com tema personalizado e integrações de pagamento, frete, estoque e ERP.
+Online stores built from scratch or on platforms like Shopify, Nuvemshop and Wix, with theme customization and payment, shipping, inventory and ERP integrations.
+
+### Sistemas sob medida e corporativos / Custom systems and enterprise software
+Sistemas sob medida e arquiteturas distribuídas (microsserviços, REST, GraphQL, ERP e dashboards) para operações críticas. SLA de disponibilidade de 99.9%.
+Custom systems and distributed architectures for mission-critical operations, with observability, fault tolerance and horizontal scaling.
+
+### Sistemas embarcados e IoT / Embedded and IoT
+Software para dispositivos e hardware em Embedded C, C++ e MQTT, com automação e processamento na borda. 50+ dispositivos em operação.
+
+### Inteligência artificial / Artificial intelligence
+Sistemas de IA para automação e previsão: machine learning, LLMs, NLP, visão computacional e RPA. 12M+ eventos processados.
+
+## Tecnologias / Stack
+React, Next.js, TypeScript, Node.js, Python, Go, PostgreSQL, Redis, Docker, Kubernetes, AWS e GCP. A stack muda conforme o projeto.
+
+## Processo / Process
+1. Descoberta / Discovery: modelo de negócio, restrições, escopo, riscos e direção técnica.
+2. Planejamento / Blueprint: UX, desenho do sistema e infraestrutura.
+3. Engenharia / Engineering: entregas semanais, code review, QA e CI/CD.
+4. Blindagem / Hardening: auditoria de segurança, ajuste de performance e monitoramento.
+
+## Clientes / Clients
+- LAET: https://laet.gallery
+- DOPE: https://dopetees.site
+- ETO: https://www.etogallery.com.br
+- UNG: https://www.ungbr.com.br
+
+## Perguntas frequentes / FAQ
+P: Qual o prazo médio de entrega? / Q: What is the average delivery time?
+R: Projetos simples levam de 2 a 4 semanas. Sistemas corporativos levam de 2 a 6 meses. O cronograma detalhado sai depois da análise técnica.
+
+P: Vocês assinam NDA? / Q: Do you sign an NDA?
+R: Sim, em todos os projetos.
+
+P: Como funciona o suporte 24/7? / Q: How does 24/7 support work?
+R: Canais dedicados com SLA em contrato. Para sistemas críticos há equipe de plantão e resposta em menos de 15 minutos.
+
+P: Vocês atendem clientes de fora do Brasil? / Q: Do you work with clients abroad?
+R: Sim. Temos clientes em 4 continentes e atendemos em português, inglês e espanhol.
+
+P: Onde fica a ESC e qual o horário? / Q: Where is ESC and what are the hours?
+R: Em São Paulo - SP. Segunda a quinta, 10h às 18h, e sexta, 10h às 13h (horário de Brasília). Respondemos mensagens em até 24 horas.
+
+## Como citar / How to cite
+ESC Software (https://esc-software.com/). Para pedir orçamento: hello@esc-software.com.

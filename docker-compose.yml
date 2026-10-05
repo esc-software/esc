@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        VITE_CONTACT_BASE_URL: ${VITE_CONTACT_BASE_URL:-}
+        VITE_CHATBOT_BASE_URL: ${VITE_CHATBOT_BASE_URL:-}
+    ports:
+      - "8080:80"
+    restart: unless-stopped

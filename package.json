@@ -1,0 +1,74 @@
+{
+  "name": "esc-software",
+  "version": "1.0.0",
+  "description": "Source code of the ESC Software website: a prerendered React landing page with technical SEO, an offline snake game and a themed 404.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "ESC Software <hello@esc-software.com> (https://esc-software.com)",
+  "homepage": "https://esc-software.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esc-software/esc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esc-software/esc/issues"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "seo",
+    "prerender",
+    "static-site",
+    "landing-page"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm run test"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@fontsource-variable/google-sans-code": "^5.3.1",
+    "@fontsource-variable/inter-tight": "^5.3.0",
+    "@fontsource-variable/montserrat": "^5.3.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^22.16.5",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react-swc": "^4.3.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^15.15.0",
+    "jsdom": "^20.0.3",
+    "postcss": "^8.5.6",
+    "prettier": "^3.9.9",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0",
+    "vite": "^7.3.6",
+    "vitest": "^5.0.3"
+  }
+}
