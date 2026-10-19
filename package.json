@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@fontsource-variable/google-sans-code": "^5.3.1",
+    "@fontsource-variable/google-sans-code": "^5.3.2",
     "@fontsource-variable/inter-tight": "^5.3.0",
     "@fontsource-variable/montserrat": "^5.3.0",
     "@testing-library/jest-dom": "^6.6.0",
@@ -60,15 +60,15 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^15.15.0",
     "jsdom": "^20.0.3",
-    "postcss": "^8.5.6",
-    "prettier": "^3.9.9",
+    "postcss": "^8.5.30",
+    "prettier": "^3.9.10",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0",
+    "typescript-eslint": "^8.71.2",
     "vite": "^7.3.6",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.5"
   }
 }
